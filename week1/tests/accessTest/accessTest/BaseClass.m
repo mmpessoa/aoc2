@@ -10,4 +10,14 @@
 
 @implementation BaseClass
 
+-(id)init
+{
+    if (self = [super init])
+    {
+        temp = 3;
+        nameString = @"hello";
+    }
+    return self;
+}
+
 @end

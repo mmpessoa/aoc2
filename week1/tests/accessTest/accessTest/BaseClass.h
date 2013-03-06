@@ -9,5 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface BaseClass : NSObject
+{
+@private
+    int temp;
+    NSString *nameString;
+}
 
 @end
