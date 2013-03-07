@@ -1,13 +1,13 @@
 //
 //  ViewController.m
-//  accessTest
+//  staticTest
 //
-//  Created by Michelle Pessoa on 3/5/13.
+//  Created by Michelle Pessoa on 3/7/13.
 //  Copyright (c) 2013 Michelle Pessoa. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "BaseClass.h"
+#import "testClass.h"
 
 @interface ViewController ()
 
@@ -17,13 +17,11 @@
 
 - (void)viewDidLoad
 {
-    BaseClass *base = [[BaseClass alloc] init];
-    if (base != nil)
-    {
-        base.temp = 456;
-        
-        NSLog(@"tempValue= %d", base.temp);
-    }
+    testClass *test =[[testClass alloc] init];
+    [test setTemp:4];
+    
+    [testClass printValue:3];
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

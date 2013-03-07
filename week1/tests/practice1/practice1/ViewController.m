@@ -1,13 +1,13 @@
 //
 //  ViewController.m
-//  accessTest
+//  practice1
 //
-//  Created by Michelle Pessoa on 3/5/13.
+//  Created by Michelle Pessoa on 3/6/13.
 //  Copyright (c) 2013 Michelle Pessoa. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "BaseClass.h"
+#import "NewClass.h"
 
 @interface ViewController ()
 
@@ -17,13 +17,16 @@
 
 - (void)viewDidLoad
 {
-    BaseClass *base = [[BaseClass alloc] init];
-    if (base != nil)
+    newClass = [[NewClass alloc] init];
+    if (newClass != nil)
     {
-        base.temp = 456;
         
-        NSLog(@"tempValue= %d", base.temp);
     }
+    
+    textLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
+    textLabel.text = [newClass getText];
+    [self.view addSubview:textLabel];
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

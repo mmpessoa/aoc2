@@ -10,6 +10,8 @@
 
 @implementation BaseClass
 
+@synthesize temp, nameString;
+
 -(id)init
 {
     if (self = [super init])

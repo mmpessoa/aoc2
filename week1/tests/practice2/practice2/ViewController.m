@@ -1,13 +1,13 @@
 //
 //  ViewController.m
-//  accessTest
+//  practice2
 //
-//  Created by Michelle Pessoa on 3/5/13.
+//  Created by Michelle Pessoa on 3/6/13.
 //  Copyright (c) 2013 Michelle Pessoa. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "BaseClass.h"
+#import "Shape.h"
 
 @interface ViewController ()
 
@@ -17,12 +17,12 @@
 
 - (void)viewDidLoad
 {
-    BaseClass *base = [[BaseClass alloc] init];
-    if (base != nil)
+    Shape *shape = [[Shape alloc] init];
+    if (shape != nil)
     {
-        base.temp = 456;
-        
-        NSLog(@"tempValue= %d", base.temp);
+        shape.numSides = 6;
+        NSLog(@"tempValue= %d", shape.numSides);
+
     }
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.

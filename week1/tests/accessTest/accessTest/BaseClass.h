@@ -15,4 +15,10 @@
     NSString *nameString;
 }
 
+@property int temp;
+//@property (readwrite) int temp;
+@property (strong) NSString *nameString;
+//@property (weak) NSString *nameString;
+
+
 @end
